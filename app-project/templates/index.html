@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    </head>
+    <body>
+        <header>
+            <div id="barra-superior">
+                <div id="logo">
+                    <a><img src="http://127.0.0.1:5000/static/images/logo1.png" width="100" height="100"></a>
+                </div>
+                <nav id="menu-superior">
+                    <h1>Clasificador de imágenes histopatológicas de cáncer de mama</h1>
+                </nav>
+            </div>
+        </header>
+        <div id="contenido2">
+            <div style="text-align: center">
+                <h2>Escoja la imagen a clasificar:</h2>
+                <form method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="image/*" class="text-info" required="required">
+                    <input type="submit" value="Clasificar" class="button-new"></input>
+                </form>
+            </div>
+        </div>
+        <footer>
+            &copy; Universidad de Málaga
+            <ul>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Aviso legal</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
